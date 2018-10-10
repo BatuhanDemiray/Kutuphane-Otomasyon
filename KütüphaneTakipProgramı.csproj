@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{814F97F0-0385-4B6F-BD8B-876EC3BA774E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KütüphaneTakipProgramı</RootNamespace>
+    <AssemblyName>KütüphaneTakipProgramı</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEkle.Designer.cs">
+      <DependentUpon>AdminEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGiris.Designer.cs">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaEkran.Designer.cs">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baglanti.cs" />
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapEkle.Designer.cs">
+      <DependentUpon>KitapEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapEmanet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapEmanet.Designer.cs">
+      <DependentUpon>KitapEmanet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapListe.Designer.cs">
+      <DependentUpon>KitapListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapSil.Designer.cs">
+      <DependentUpon>KitapSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapTeslim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapTeslim.Designer.cs">
+      <DependentUpon>KitapTeslim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkle.Designer.cs">
+      <DependentUpon>KullaniciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGiris.Designer.cs">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciListe.Designer.cs">
+      <DependentUpon>KullaniciListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminEkle.resx">
+      <DependentUpon>AdminEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGiris.resx">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaEkran.resx">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapEkle.resx">
+      <DependentUpon>KitapEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapEmanet.resx">
+      <DependentUpon>KitapEmanet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapListe.resx">
+      <DependentUpon>KitapListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapSil.resx">
+      <DependentUpon>KitapSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapTeslim.resx">
+      <DependentUpon>KitapTeslim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkle.resx">
+      <DependentUpon>KullaniciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGiris.resx">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciListe.resx">
+      <DependentUpon>KullaniciListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resim\bookadd.ico" />
+    <Content Include="Resim\bookadd.png" />
+    <Content Include="Resim\cross.ico" />
+    <Content Include="Resim\delete.ico" />
+    <Content Include="Resim\delete.png" />
+    <Content Include="Resim\excel.png" />
+    <Content Include="Resim\handshake.ico" />
+    <Content Include="Resim\handshake.png" />
+    <Content Include="Resim\home.png" />
+    <Content Include="Resim\home2.png" />
+    <Content Include="Resim\icon.ico" />
+    <Content Include="Resim\key.ico" />
+    <Content Include="Resim\keypng.png" />
+    <Content Include="Resim\kitap.png" />
+    <Content Include="Resim\list.ico" />
+    <Content Include="Resim\list.png" />
+    <Content Include="Resim\logout.ico" />
+    <Content Include="Resim\logout.png" />
+    <Content Include="Resim\plus.ico" />
+    <Content Include="Resim\plus.png" />
+    <Content Include="Resim\tik.ico" />
+    <Content Include="Resim\tik.png" />
+    <Content Include="Resim\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
